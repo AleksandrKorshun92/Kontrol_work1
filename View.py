@@ -42,8 +42,8 @@ def add_notebooks():
 def search_word() ->str:
     return input(Menu.search_word)
 
-def remove_notebookt():
-        a = input(Menu.remove_contact)
+def remove_notebook():
+        a = input(Menu.remove_notebook)
         b = int(input(Menu.remove_danger))
         if b == 1:
             return a     
@@ -53,6 +53,6 @@ def change_notebook():
 
 def change_ct():
     new = {}
-    for key, value in Menu.change_contact.items():
+    for key, value in Menu.change_notebook.items():
         new[key] = input(value)
     return new
