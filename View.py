@@ -15,13 +15,13 @@ def show_notebook(book: dict[int:dict[str,str]], message):
         max_name = []
         max_comment = []
         for cnt in book.values():
-            max_name.append(len(cnt.get('Дата заметки')))
+            max_name.append(len(cnt.get('Название заметки')))
             max_comment.append(len(cnt.get('Заметка')))
         size_name = max(max_name)
         size_comment = max(max_comment)
         print('\n'+'='*(size_name + size_comment +7))
         for index, contact in book.items():
-            print(f'{index:>3}. {contact.get("Дата заметки"):<{size_name+1}} {contact.get("Заметка"):<{size_comment+1}}')
+            print(f'{index:>3}. {contact.get("Название заметки"):<{size_name+1}} {contact.get("Заметка"):<{size_comment+1}}')
         print('=' * (size_name +  size_comment + 7) + '\n')
                       
     else:

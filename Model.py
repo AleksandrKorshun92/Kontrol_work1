@@ -1,4 +1,5 @@
 import json
+
 notebook ={}
 path = 'notebook.json'
 
@@ -45,7 +46,7 @@ def add_notebook(new:dict[str,str]):
     new_notebook = {check_id(): new}
     notebook.update(new_notebook)
 
-def change_notebook(id_cnt, change_ct):
+def change_notebook(id_cnt, change_ct:dict[str,str]):
     notebook[id_cnt] = change_ct
     notebook.update(notebook)
     

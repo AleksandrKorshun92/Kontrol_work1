@@ -27,7 +27,7 @@ def starts():
             case 5:
                 new = View.add_notebooks()
                 Model.add_notebook(new)
-                View.print_message(Menu.add_succesful(new.get('Дата заметки')))
+                View.print_message(Menu.add_succesful(new.get('Название заметки')))
             case 6:
                 word = View.search_word()
                 result = Model.search(word)
